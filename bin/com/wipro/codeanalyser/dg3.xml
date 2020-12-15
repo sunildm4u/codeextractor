@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE dependencies SYSTEM "http://depfind.sourceforge.net/dtd/dependencies.dtd">
+
+<dependencies>
+    <package confirmed="yes">
+        <name>action</name>
+        <class confirmed="yes">
+            <name>action.LoginAction</name>
+            <outbound type="class" confirmed="no">com.opensymphony.xwork2.ActionSupport</outbound>
+            <feature confirmed="yes">
+                <name>action.LoginAction.LoginAction()</name>
+                <outbound type="feature" confirmed="yes">action.LoginAction.status</outbound>
+                <outbound type="feature" confirmed="yes">action.LoginAction.status2</outbound>
+                <outbound type="feature" confirmed="no">com.opensymphony.xwork2.ActionSupport.ActionSupport()</outbound>
+                <outbound type="class" confirmed="no">java.lang.Boolean</outbound>
+                <outbound type="feature" confirmed="no">java.lang.Boolean.valueOf(boolean)</outbound>
+            </feature>
+            <feature confirmed="no">
+                <name>action.LoginAction.addFieldError(java.lang.String, java.lang.String)</name>
+                <inbound type="feature" confirmed="yes">action.LoginAction.execute()</inbound>
+                <inbound type="feature" confirmed="yes">action.LoginAction.validate()</inbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>action.LoginAction.execute()</name>
+                <outbound type="feature" confirmed="no">action.LoginAction.addFieldError(java.lang.String, java.lang.String)</outbound>
+                <outbound type="feature" confirmed="yes">action.LoginAction.password</outbound>
+                <outbound type="feature" confirmed="yes">action.LoginAction.status</outbound>
+                <outbound type="feature" confirmed="yes">action.LoginAction.username</outbound>
+                <outbound type="feature" confirmed="yes">action.LoginAction.usertype</outbound>
+                <outbound type="feature" confirmed="no">com.dao.LoginDAO.validateUser(java.lang.String, java.lang.String, java.lang.String)</outbound>
+                <outbound type="class" confirmed="no">java.io.PrintStream</outbound>
+                <outbound type="feature" confirmed="no">java.io.PrintStream.println(java.lang.String)</outbound>
+                <outbound type="class" confirmed="no">java.lang.Boolean</outbound>
+                <outbound type="feature" confirmed="no">java.lang.Boolean.booleanValue()</outbound>
+                <outbound type="feature" confirmed="no">java.lang.Boolean.valueOf(boolean)</outbound>
+                <outbound type="class" confirmed="no">java.lang.Object</outbound>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+                <outbound type="class" confirmed="no">java.lang.StringBuilder</outbound>
+                <outbound type="feature" confirmed="no">java.lang.StringBuilder.StringBuilder()</outbound>
+                <outbound type="feature" confirmed="no">java.lang.StringBuilder.append(java.lang.String)</outbound>
+                <outbound type="feature" confirmed="no">java.lang.StringBuilder.toString()</outbound>
+                <outbound type="feature" confirmed="no">java.lang.System.out</outbound>
+                <outbound type="class" confirmed="no">javax.servlet.http.HttpServletRequest</outbound>
+                <outbound type="feature" confirmed="no">javax.servlet.http.HttpServletRequest.getSession(boolean)</outbound>
+                <outbound type="class" confirmed="no">javax.servlet.http.HttpSession</outbound>
+                <outbound type="feature" confirmed="no">javax.servlet.http.HttpSession.setAttribute(java.lang.String, java.lang.Object)</outbound>
+                <outbound type="feature" confirmed="no">org.apache.struts2.ServletActionContext.getRequest()</outbound>
+                <outbound type="feature" confirmed="no">xtra.UserLoginAs.getLoginAs()</outbound>
+                <outbound type="feature" confirmed="no">xtra.UserLoginAs.setLoginAs(java.lang.String)</outbound>
+                <outbound type="feature" confirmed="no">xtra.UserLoginAs.setUsername(java.lang.String)</outbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>action.LoginAction.getPassword()</name>
+                <outbound type="feature" confirmed="yes">action.LoginAction.password</outbound>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>action.LoginAction.getUsername()</name>
+                <outbound type="feature" confirmed="yes">action.LoginAction.username</outbound>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>action.LoginAction.getUsertype()</name>
+                <outbound type="feature" confirmed="yes">action.LoginAction.usertype</outbound>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>action.LoginAction.logout()</name>
+                <outbound type="feature" confirmed="yes">action.LoginAction.sessionMap</outbound>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+                <outbound type="class" confirmed="no">org.apache.struts2.dispatcher.SessionMap</outbound>
+                <outbound type="feature" confirmed="no">org.apache.struts2.dispatcher.SessionMap.invalidate()</outbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>action.LoginAction.password</name>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+                <inbound type="feature" confirmed="yes">action.LoginAction.execute()</inbound>
+                <inbound type="feature" confirmed="yes">action.LoginAction.getPassword()</inbound>
+                <inbound type="feature" confirmed="yes">action.LoginAction.setPassword(java.lang.String)</inbound>
+                <inbound type="feature" confirmed="yes">action.LoginAction.validate()</inbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>action.LoginAction.response</name>
+                <outbound type="class" confirmed="no">javax.servlet.http.HttpServletResponse</outbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>action.LoginAction.sessionMap</name>
+                <outbound type="class" confirmed="no">org.apache.struts2.dispatcher.SessionMap</outbound>
+                <inbound type="feature" confirmed="yes">action.LoginAction.logout()</inbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>action.LoginAction.setPassword(java.lang.String)</name>
+                <outbound type="feature" confirmed="yes">action.LoginAction.password</outbound>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>action.LoginAction.setUsername(java.lang.String)</name>
+                <outbound type="feature" confirmed="yes">action.LoginAction.username</outbound>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>action.LoginAction.setUsertype(java.lang.String)</name>
+                <outbound type="feature" confirmed="yes">action.LoginAction.usertype</outbound>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>action.LoginAction.status</name>
+                <outbound type="class" confirmed="no">java.lang.Boolean</outbound>
+                <inbound type="feature" confirmed="yes">action.LoginAction.LoginAction()</inbound>
+                <inbound type="feature" confirmed="yes">action.LoginAction.execute()</inbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>action.LoginAction.status2</name>
+                <outbound type="class" confirmed="no">java.lang.Boolean</outbound>
+                <inbound type="feature" confirmed="yes">action.LoginAction.LoginAction()</inbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>action.LoginAction.username</name>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+                <inbound type="feature" confirmed="yes">action.LoginAction.execute()</inbound>
+                <inbound type="feature" confirmed="yes">action.LoginAction.getUsername()</inbound>
+                <inbound type="feature" confirmed="yes">action.LoginAction.setUsername(java.lang.String)</inbound>
+                <inbound type="feature" confirmed="yes">action.LoginAction.validate()</inbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>action.LoginAction.usertype</name>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+                <inbound type="feature" confirmed="yes">action.LoginAction.execute()</inbound>
+                <inbound type="feature" confirmed="yes">action.LoginAction.getUsertype()</inbound>
+                <inbound type="feature" confirmed="yes">action.LoginAction.setUsertype(java.lang.String)</inbound>
+                <inbound type="feature" confirmed="yes">action.LoginAction.validate()</inbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>action.LoginAction.validate()</name>
+                <outbound type="feature" confirmed="no">action.LoginAction.addFieldError(java.lang.String, java.lang.String)</outbound>
+                <outbound type="feature" confirmed="yes">action.LoginAction.password</outbound>
+                <outbound type="feature" confirmed="yes">action.LoginAction.username</outbound>
+                <outbound type="feature" confirmed="yes">action.LoginAction.usertype</outbound>
+                <outbound type="class" confirmed="no">java.lang.Object</outbound>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+                <outbound type="feature" confirmed="no">java.lang.String.equals(java.lang.Object)</outbound>
+                <outbound type="feature" confirmed="no">java.lang.String.length()</outbound>
+            </feature>
+        </class>
+    </package>
+    <package confirmed="no">
+        <name>com.dao</name>
+        <class confirmed="no">
+            <name>com.dao.LoginDAO</name>
+            <feature confirmed="no">
+                <name>com.dao.LoginDAO.validateUser(java.lang.String, java.lang.String, java.lang.String)</name>
+                <inbound type="feature" confirmed="yes">action.LoginAction.execute()</inbound>
+            </feature>
+        </class>
+    </package>
+    <package confirmed="no">
+        <name>com.opensymphony.xwork2</name>
+        <class confirmed="no">
+            <name>com.opensymphony.xwork2.ActionSupport</name>
+            <inbound type="class" confirmed="yes">action.LoginAction</inbound>
+            <feature confirmed="no">
+                <name>com.opensymphony.xwork2.ActionSupport.ActionSupport()</name>
+                <inbound type="feature" confirmed="yes">action.LoginAction.LoginAction()</inbound>
+            </feature>
+        </class>
+    </package>
+    <package confirmed="no">
+        <name>java.io</name>
+        <class confirmed="no">
+            <name>java.io.PrintStream</name>
+            <inbound type="feature" confirmed="yes">action.LoginAction.execute()</inbound>
+            <feature confirmed="no">
+                <name>java.io.PrintStream.println(java.lang.String)</name>
+                <inbound type="feature" confirmed="yes">action.LoginAction.execute()</inbound>
+            </feature>
+        </class>
+    </package>
+    <package confirmed="no">
+        <name>java.lang</name>
+        <class confirmed="no">
+            <name>java.lang.Boolean</name>
+            <inbound type="feature" confirmed="yes">action.LoginAction.LoginAction()</inbound>
+            <inbound type="feature" confirmed="yes">action.LoginAction.execute()</inbound>
+            <inbound type="feature" confirmed="yes">action.LoginAction.status</inbound>
+            <inbound type="feature" confirmed="yes">action.LoginAction.status2</inbound>
+            <feature confirmed="no">
+                <name>java.lang.Boolean.booleanValue()</name>
+                <inbound type="feature" confirmed="yes">action.LoginAction.execute()</inbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.lang.Boolean.valueOf(boolean)</name>
+                <inbound type="feature" confirmed="yes">action.LoginAction.LoginAction()</inbound>
+                <inbound type="feature" confirmed="yes">action.LoginAction.execute()</inbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>java.lang.Object</name>
+            <inbound type="feature" confirmed="yes">action.LoginAction.execute()</inbound>
+            <inbound type="feature" confirmed="yes">action.LoginAction.validate()</inbound>
+        </class>
+        <class confirmed="no">
+            <name>java.lang.String</name>
+            <inbound type="feature" confirmed="yes">action.LoginAction.execute()</inbound>
+            <inbound type="feature" confirmed="yes">action.LoginAction.getPassword()</inbound>
+            <inbound type="feature" confirmed="yes">action.LoginAction.getUsername()</inbound>
+            <inbound type="feature" confirmed="yes">action.LoginAction.getUsertype()</inbound>
+            <inbound type="feature" confirmed="yes">action.LoginAction.logout()</inbound>
+            <inbound type="feature" confirmed="yes">action.LoginAction.password</inbound>
+            <inbound type="feature" confirmed="yes">action.LoginAction.setPassword(java.lang.String)</inbound>
+            <inbound type="feature" confirmed="yes">action.LoginAction.setUsername(java.lang.String)</inbound>
+            <inbound type="feature" confirmed="yes">action.LoginAction.setUsertype(java.lang.String)</inbound>
+            <inbound type="feature" confirmed="yes">action.LoginAction.username</inbound>
+            <inbound type="feature" confirmed="yes">action.LoginAction.usertype</inbound>
+            <inbound type="feature" confirmed="yes">action.LoginAction.validate()</inbound>
+            <feature confirmed="no">
+                <name>java.lang.String.equals(java.lang.Object)</name>
+                <inbound type="feature" confirmed="yes">action.LoginAction.validate()</inbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.lang.String.length()</name>
+                <inbound type="feature" confirmed="yes">action.LoginAction.validate()</inbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>java.lang.StringBuilder</name>
+            <inbound type="feature" confirmed="yes">action.LoginAction.execute()</inbound>
+            <feature confirmed="no">
+                <name>java.lang.StringBuilder.StringBuilder()</name>
+                <inbound type="feature" confirmed="yes">action.LoginAction.execute()</inbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.lang.StringBuilder.append(java.lang.String)</name>
+                <inbound type="feature" confirmed="yes">action.LoginAction.execute()</inbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.lang.StringBuilder.toString()</name>
+                <inbound type="feature" confirmed="yes">action.LoginAction.execute()</inbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>java.lang.System</name>
+            <feature confirmed="no">
+                <name>java.lang.System.out</name>
+                <inbound type="feature" confirmed="yes">action.LoginAction.execute()</inbound>
+            </feature>
+        </class>
+    </package>
+    <package confirmed="no">
+        <name>javax.servlet.http</name>
+        <class confirmed="no">
+            <name>javax.servlet.http.HttpServletRequest</name>
+            <inbound type="feature" confirmed="yes">action.LoginAction.execute()</inbound>
+            <feature confirmed="no">
+                <name>javax.servlet.http.HttpServletRequest.getSession(boolean)</name>
+                <inbound type="feature" confirmed="yes">action.LoginAction.execute()</inbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>javax.servlet.http.HttpServletResponse</name>
+            <inbound type="feature" confirmed="yes">action.LoginAction.response</inbound>
+        </class>
+        <class confirmed="no">
+            <name>javax.servlet.http.HttpSession</name>
+            <inbound type="feature" confirmed="yes">action.LoginAction.execute()</inbound>
+            <feature confirmed="no">
+                <name>javax.servlet.http.HttpSession.setAttribute(java.lang.String, java.lang.Object)</name>
+                <inbound type="feature" confirmed="yes">action.LoginAction.execute()</inbound>
+            </feature>
+        </class>
+    </package>
+    <package confirmed="no">
+        <name>org.apache.struts2</name>
+        <class confirmed="no">
+            <name>org.apache.struts2.ServletActionContext</name>
+            <feature confirmed="no">
+                <name>org.apache.struts2.ServletActionContext.getRequest()</name>
+                <inbound type="feature" confirmed="yes">action.LoginAction.execute()</inbound>
+            </feature>
+        </class>
+    </package>
+    <package confirmed="no">
+        <name>org.apache.struts2.dispatcher</name>
+        <class confirmed="no">
+            <name>org.apache.struts2.dispatcher.SessionMap</name>
+            <inbound type="feature" confirmed="yes">action.LoginAction.logout()</inbound>
+            <inbound type="feature" confirmed="yes">action.LoginAction.sessionMap</inbound>
+            <feature confirmed="no">
+                <name>org.apache.struts2.dispatcher.SessionMap.invalidate()</name>
+                <inbound type="feature" confirmed="yes">action.LoginAction.logout()</inbound>
+            </feature>
+        </class>
+    </package>
+    <package confirmed="no">
+        <name>xtra</name>
+        <class confirmed="no">
+            <name>xtra.UserLoginAs</name>
+            <feature confirmed="no">
+                <name>xtra.UserLoginAs.getLoginAs()</name>
+                <inbound type="feature" confirmed="yes">action.LoginAction.execute()</inbound>
+            </feature>
+            <feature confirmed="no">
+                <name>xtra.UserLoginAs.setLoginAs(java.lang.String)</name>
+                <inbound type="feature" confirmed="yes">action.LoginAction.execute()</inbound>
+            </feature>
+            <feature confirmed="no">
+                <name>xtra.UserLoginAs.setUsername(java.lang.String)</name>
+                <inbound type="feature" confirmed="yes">action.LoginAction.execute()</inbound>
+            </feature>
+        </class>
+    </package>
+</dependencies>
